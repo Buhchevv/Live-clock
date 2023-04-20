@@ -26,7 +26,7 @@ minute_hand = canvas.create_line(300, 300, 300, 150, width=10, fill='black')
 second_hand = canvas.create_line(300, 300, 300, 100, width=5, fill='red')
 
 # Draw the numbers
-for i in range(12):
+for i in range(12, 24):
     angle = (i / 12) * 2 * math.pi
     x = 300 + 225 * math.sin(angle)
     y = 300 - 225 * math.cos(angle)
